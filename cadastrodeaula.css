@@ -1,0 +1,90 @@
+/* Configuração Geral e Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f6f9; /* Fundo suave para destacar a caixa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* A Caixa do Formulário */
+.cadastro {
+    background: #ffffff;
+    padding: 35px;
+    width: 100%;
+    max-width: 450px; /* Largura ideal para formulários de cadastro */
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05); /* Sombra leve e moderna */
+}
+
+/* Título */
+.cadastro h2 {
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-size: 26px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Estilização Comum para os Blocos de Campo (disciplina, codigo, horaria, etc.) */
+.disciplina, .codigo, .horaria, .semestre, .rofessor {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Rótulos (Labels) */
+label {
+    margin-bottom: 6px;
+    color: #5a6a85;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Campos de Entrada (Inputs) */
+input[type="text"] {
+    padding: 12px 14px;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #333333;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao Clicar no Campo (Focus) */
+input[type="text"]:focus {
+    border-color: #3b82f6; /* Azul moderno */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15); /* Brilho sutil ao redor */
+}
+
+/* Estilização do Botão */
+.butao {
+    margin-top: 25px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+/* Efeito ao Passar o Mouse no Botão */
+button:hover {
+    background-color: #2563eb;
+}
