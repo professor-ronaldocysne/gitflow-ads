@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+:root {
+    --main-font: Arial, Helvetica, sans-serif;
+    --main-color: #252525;
+    --form-color: #FEFEFE;
+    --button-color: #B3B3B3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: auto;
+    background-image: linear-gradient(to bottom, yellow, cyan);
+    font-family: var(--main-font);
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100px;
+    color: white;
+    background-color: var(--main-color);
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    margin: auto;
+    width: 900px;
+    height: 600px;
+    background-color: var(--form-color);
+}
+
+footer {
+    height: 200px;
+    background-color: var(--main-color);
+}
