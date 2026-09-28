@@ -1,5 +1,56 @@
+:root {
+    --main-font: Arial, Helvetica, sans-serif;
+    --main-color: #252525;
+    --form-color: #FEFEFE;
+    --button-color: #B3B3B3;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom, yellow, cyan);
+    font-family: var(--main-font);
+    height: 100vh;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    padding: 20px;
+    width: 500px;
+    height: 500px;
+    background-color: var(--form-color);
+    border-radius: 5px;
+    border: 3px solid var(--main-color);
+}
+
+h2 {
+    margin: 70px 0 0;
+}
+
+input {    
+    padding: 10px;
+}
+
+input[type="submit"] {
+    margin-top: 70px;
+    align-self: flex-end;
+    width: 200px;
+    background-color: var(--button-color);
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: border 0.1s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #B0B0B0;
+    border: 2px solid var(--main-color);
 }
