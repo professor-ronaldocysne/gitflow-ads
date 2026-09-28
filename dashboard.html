@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sistema Acadêmico</title>
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho-marca">
+            <span class="cabecalho-selo" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 10 12 5 2 10l10 5 10-5z"/>
+                    <path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/>
+                    <path d="M22 10v6"/>
+                </svg>
+            </span>
+            <div class="cabecalho-texto">
+                <h1 class="cabecalho-titulo">Sistema Acadêmico</h1>
+                <p class="cabecalho-subtitulo">Painel de gestão acadêmica &middot; UNI7</p>
+            </div>
+        </div>
+    </header>
+    <main class="conteudo">
+        <section class="card" id="Alunos" aria-labelledby="titulo-alunos">
+            <header class="card-cabecalho">
+                <span class="card-icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </span>
+                <div class="card-titulos">
+                    <h2 class="card-titulo" id="titulo-alunos">Alunos</h2>
+                    <p class="card-descricao">Alunos Uni7</p>
+                </div>
+            </header>
+            <table class="tabela">
+                <thead class="cabecalho-tabela">
+                    <tr class="linha-tabela">
+                        <th class="cabecalho-linha">Nome</th>
+                        <th class="cabecalho-linha">Matrícula</th>
+                        <th class="cabecalho-linha">Email</th>
+                        <th class="cabecalho-linha">Curso</th>
+                    </tr>
+                </thead>
+                <tbody class="corpo-tabela">
+                    <tr class="linha-tabela">
+                        <td class="celula-tabela">John Doe</td>
+                        <td class="celula-tabela">123456</td>
+                        <td class="celula-tabela">john.doe@example.com</td>
+                        <td class="celula-tabela">Analise e Desenvolvimento de Sistemas</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="card" id="Professores" aria-labelledby="titulo-professores">
+            <header class="card-cabecalho">
+                <span class="card-icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2"/>
+                        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+                    </svg>
+                </span>
+                <div class="card-titulos">
+                    <h2 class="card-titulo" id="titulo-professores">Professores</h2>
+                    <p class="card-descricao">Professores Uni7</p>
+                </div>
+            </header>
+            <table class="tabela">
+                <thead class="cabecalho-tabela">
+                    <tr class="linha-tabela">
+                        <th class="cabecalho-linha">Nome</th>
+                        <th class="cabecalho-linha">Matrícula Funcional</th>
+                        <th class="cabecalho-linha">Email</th>
+                        <th class="cabecalho-linha">Área de Atuação</th>
+                    </tr>
+                </thead>
+                <tbody class="corpo-tabela">
+                    <tr class="linha-tabela">
+                        <td class="celula-tabela">John Doe</td>
+                        <td class="celula-tabela">123456</td>
+                        <td class="celula-tabela">john.doe@example.com</td>
+                        <td class="celula-tabela">Matemática, Física</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="card" id="Disciplinas" aria-labelledby="titulo-disciplinas">
+            <header class="card-cabecalho">
+                <span class="card-icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                        <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                    </svg>
+                </span>
+                <div class="card-titulos">
+                    <h2 class="card-titulo" id="titulo-disciplinas">Disciplinas</h2>
+                    <p class="card-descricao">Disciplinas ofertadas</p>
+                </div>
+            </header>
+            <table class="tabela">
+                <thead class="cabecalho-tabela">
+                    <tr class="linha-tabela">
+                        <th class="cabecalho-linha">Nome</th>
+                        <th class="cabecalho-linha">Código</th>
+                        <th class="cabecalho-linha">Carga Horária</th>
+                        <th class="cabecalho-linha">Semestre</th>
+                    </tr>
+                </thead>
+                <tbody class="corpo-tabela">
+                    <tr class="linha-tabela">
+                        <td class="celula-tabela">Matemática</td>
+                        <td class="celula-tabela">123456</td>
+                        <td class="celula-tabela">80</td>
+                        <td class="celula-tabela">1</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="card" id="Cursos" aria-labelledby="titulo-cursos">
+            <header class="card-cabecalho">
+                <span class="card-icone" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 10 12 5 2 10l10 5 10-5z"/>
+                        <path d="M6 12v5c0 1.66 2.69 3 6 3s6-1.34 6-3v-5"/>
+                    </svg>
+                </span>
+                <div class="card-titulos">
+                    <h2 class="card-titulo" id="titulo-cursos">Cursos</h2>
+                    <p class="card-descricao">Cursos ofertados</p>
+                </div>
+            </header>
+            <table class="tabela">
+                <thead class="cabecalho-tabela">
+                    <tr class="linha-tabela">
+                        <th class="cabecalho-linha">Nome</th>
+                        <th class="cabecalho-linha">Código</th>
+                        <th class="cabecalho-linha">Duração</th>
+                        <th class="cabecalho-linha">Turno</th>
+                    </tr>
+                </thead>
+                <tbody class="corpo-tabela">
+                    <tr class="linha-tabela">
+                        <td class="celula-tabela">Analise e Desenvolvimento de Sistemas</td>
+                        <td class="celula-tabela">123456</td>
+                        <td class="celula-tabela">2 anos</td>
+                        <td class="celula-tabela">Noturno</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>&copy; Turma de Análise e Desenvolvimento de Sistemas UNI7</p>
+    </footer>
+</body>
+</html>
