@@ -3,10 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Sistema Acadêmico</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Sistema Acadêmico - Cadastro de Curso</title>
 </head>
+
 <body>
-    <h1>Teste de commit</h1>
+
+    <main class="container">
+
+        <h1>Cadastro de Curso</h1>
+
+        <form id="formCurso">
+
+            <div class="campo">
+                <label for="nome">Nome do curso:</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite o nome do curso"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="codigo">Código:</label>
+                <input
+                    type="text"
+                    id="codigo"
+                    name="codigo"
+                    placeholder="Ex.: ADS001"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="duracao">Duração:</label>
+                <input
+                    type="text"
+                    id="duracao"
+                    name="duracao"
+                    placeholder="Ex.: 4 anos"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="turno">Turno:</label>
+
+                <select id="turno" name="turno" required>
+                    <option value="">Selecione o turno</option>
+                    <option value="matutino">Matutino</option>
+                    <option value="vespertino">Vespertino</option>
+                    <option value="noturno">Noturno</option>
+                    <option value="integral">Integral</option>
+                </select>
+            </div>
+
+            <button type="submit">
+                Cadastrar curso
+            </button>
+
+        </form>
+
+        <div id="mensagem"></div>
+
+    </main>
+
+    <script>
+        const form = document.getElementById("formCurso");
+        const mensagem = document.getElementById("mensagem");
+
+        form.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            mensagem.textContent = "Curso cadastrado com sucesso!";
+            mensagem.className = "sucesso";
+
+            form.reset();
+        });
+    </script>
+
 </body>
 </html>
